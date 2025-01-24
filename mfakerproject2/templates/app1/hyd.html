@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   {%if type == "hydjobs"%}
+    {% if hd%}
+       <table border="2px" >
+         <tr>
+            <th>date</th>
+            <th>company</th>
+            <th>title</th>
+            <th>eligibility</th>
+            <th>add</th>
+            <th>phone</th>
+            <th>email</th>
+           </tr>
+        {%for i in hd%}
+           <tr>
+            <td>{{i.date}}</td>
+            <td>{{i.company}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.eligibility}}</td>
+            <td>{{i.add}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.email}}</td>
+           </tr>
+        {%endfor%}
+    {%else%}
+       <tr><td>no data found</td></tr>
+    {%endif%}
+       </table>
+   {%elif type == "bengjobs"%}
+   {% if hd%}
+   <table border="2px">
+     <tr>
+        <th>date</th>
+        <th>company</th>
+        <th>title</th>
+        <th>eligibility</th>
+        <th>add</th>
+        <th>phone</th>
+        <th>email</th>
+       </tr>
+    {%for i in hd%}
+       <tr>
+        <td>{{i.date}}</td>
+        <td>{{i.company}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.eligibility}}</td>
+        <td>{{i.add}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.email}}</td>
+       </tr>
+    {%endfor%}
+{%else%}
+   <tr><td>no data found</td></tr>
+{%endif%}
+   </table>
+   {%elif type == "chjobs"%}
+   {% if hd%}
+   <table border="2px">
+     <tr>
+        <th>date</th>
+        <th>company</th>
+        <th>title</th>
+        <th>eligibility</th>
+        <th>add</th>
+        <th>phone</th>
+        <th>email</th>
+       </tr>
+    {%for i in hd%}
+       <tr>
+        <td>{{i.date}}</td>
+        <td>{{i.company}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.eligibility}}</td>
+        <td>{{i.add}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.email}}</td>
+       </tr>
+    {%endfor%}
+{%else%}
+   <tr><td>no data found</td></tr>
+{%endif%}
+   </table>
+   {%endif%}
+
+</body>
+</html>

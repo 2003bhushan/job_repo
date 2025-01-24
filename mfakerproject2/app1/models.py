@@ -1,0 +1,25 @@
+from django.db import models
+class hydjob(models.Model):
+    date=models.DateField()
+    company=models.CharField(max_length=30)
+    title=models.CharField(max_length=30)
+    eligibility=models.CharField(max_length=30)
+    add=models.TextField(max_length=30)
+    phone=models.BigIntegerField()
+    email=models.EmailField()
+class bngjob(models.Model):
+    date=models.DateField()
+    company=models.CharField(max_length=30)
+    title=models.CharField(max_length=30)
+    eligibility=models.CharField(max_length=30)
+    add=models.TextField(max_length=30)
+    phone=models.BigIntegerField()
+    email=models.EmailField()
+class chennaijob(models.Model):
+    date=models.DateField()
+    company=models.CharField(max_length=30)
+    title=models.CharField(max_length=30)
+    eligibility=models.CharField(max_length=30)
+    add=models.TextField(max_length=30)
+    phone=models.BigIntegerField()
+    email=models.EmailField()
